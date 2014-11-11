@@ -117,6 +117,10 @@ color: #015ba7;
 .topicListView {
   background-position: 0 -1362px;
 }
+.likeIcon {
+  background-position: 0 -522px;
+  margin-right: 3px;
+}
 /*ICONS END*/
 
 /* FEED ITEM PAGE */
