@@ -202,9 +202,19 @@ color: #015ba7;
   overflow: hidden;
 }
 .newCommentBody textarea {
-	width: 100%;
-	height: 38px;
-	margin-bottom: 5px;
+  resize: none;
+  margin: 0;
+  overflow: hidden;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ededed;
+  padding: 4px;
+  line-height: 16px;
+  -webkit-line-break: after-white-space;
+  word-wrap: break-word;
+  outline-style: none;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
 }
 .btnGrey {
   color: #222;
