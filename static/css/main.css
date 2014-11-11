@@ -62,3 +62,37 @@ h, a {
 #logo {
 	width: 170px;
 }
+.leftNav .menuItem {
+  list-style: none;
+  margin-left: 0;
+}
+.leftNav .menuItem.selected {
+  background-color: #c4e7f2;
+  border-radius: 5px;
+}
+.leftNav .menuItem .trigger {
+  padding-left: 27px;
+}
+.leftNav .menuItem.selected .trigger {
+  font-weight: 700;
+  color: #333435;
+  text-decoration: none;
+}
+.leftNav .menuItem .trigger .icon {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 2px;
+  text-decoration: none;
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  max-height: 16px;
+  max-width: 16px;
+}
+.leftNav .menuItem.feedTypeList .trigger .icon {
+  background-image: url(../images/chattersupersprite.png);
+  background-position: 0 -322px;
+  width: 16px;
+  height: 16px;
+}
