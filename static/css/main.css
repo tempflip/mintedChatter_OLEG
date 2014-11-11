@@ -11,9 +11,6 @@ color: #015ba7;
 	background-color: #C95815;
 	border-color: #222222;
 }
-h, a {
-	color: #C95815;
-}
 .myUserInfo {
 	width: 100%;
 	height: 70px;
@@ -166,6 +163,9 @@ h, a {
 	margin-left: 50px;
 	margin-bottom: 5px;
 	font-size: 11px;
+}
+.itemTools a {
+  color: #015ba7;
 }
 .commentContainer, .newCommentContainer {
 	border-top: 1px solid #BDBDBD;	
