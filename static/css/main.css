@@ -176,6 +176,7 @@ color: #015ba7;
   border-bottom: 1px solid #f3f3f3;
 	background: #fbfbfb;
 	padding: 10px;
+  padding-right: 20px;
 	margin-left: 50px;
   margin-top: 20px;
 }
@@ -200,6 +201,7 @@ color: #015ba7;
 .newCommentBody {
 	font-size: 11px;
   overflow: hidden;
+  margin-left: 50px;
 }
 .newCommentBody textarea {
   resize: none;
