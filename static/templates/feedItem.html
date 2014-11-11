@@ -67,6 +67,9 @@
 
 		<div class="newCommentContainer" ng-show="newComment && !commentLoading">
 			<div class="newCommentBody">
+				<div class="myUserInfoIcon">
+					<img src="{{myUserData.photo.smallPhotoUrl}}"/>
+				</div>
 				<textarea ng-model="comment" rows="3" ></textarea>
 			</div>
 
