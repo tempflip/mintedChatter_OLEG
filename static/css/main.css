@@ -108,7 +108,7 @@ h, a {
   width: 16px;
   height: 16px;
 }
-.leftNav .menuItem.groupListView .trigger .icon {
+.leftNav .menuItem.topicListView .trigger .icon {
   background-image: url(../images/chattersupersprite.png);
   background-position: 0 -1362px;
   width: 16px;

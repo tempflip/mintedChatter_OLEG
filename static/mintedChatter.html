@@ -57,9 +57,11 @@
             Topics
           </a>
         </li>
-				<li class="topic" ng-repeat="topic in topics">
-					<a href="#" ng-click="getTopicFeed(topic.id, topic.name);">{{topic.name}}</a>
-				</li>
+        <div ng-repeat="topic in topics">
+          <li class="menuItem">
+            <a href="#" ng-click="getTopicFeed(topic.id, topic.name);">{{topic.name}}</a>
+          </li>
+        </div>
       </ul>
       </div>
 		</div> <!-- end of sidebar column-->
