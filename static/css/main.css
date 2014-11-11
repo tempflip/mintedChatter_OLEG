@@ -21,8 +21,12 @@ color: #015ba7;
 	float: left;
 }
 .myUserInfoIcon img {
-	width:45;
-	height: 45;
+	width: 45px;
+	height: 45px;
+}
+.newCommentContainer .myUserInfoIcon img {
+  height: 30px;
+  width: 30px;
 }
 .myUserName {
   color: #015ba7;
@@ -201,7 +205,7 @@ color: #015ba7;
 .newCommentBody {
 	font-size: 11px;
   overflow: hidden;
-  margin-left: 50px;
+  margin-left: 55px;
 }
 .newCommentBody textarea {
   resize: none;
@@ -217,6 +221,7 @@ color: #015ba7;
   outline-style: none;
   border-radius: 3px;
   -moz-border-radius: 3px;
+  margin-bottom: 10px;
 }
 .btnGrey {
   color: #222;
