@@ -1,0 +1,32 @@
+<style>
+.postBoxContainer {
+	width: 100%;
+	margin-bottom: 30px;
+}
+.newPostBody {
+}
+.newPostBodyActive {
+	height: 80px;
+}
+.newPostButton {
+	font-size: 11px;
+}
+.newPostArea {
+	float:left;
+	height: 30px;
+	width: 100%;
+	font-size: 11px;
+	margin-right: 27px;
+	margin-bottom: 5px;
+}
+.newPostAreaActive {
+	height: 70px;
+}
+
+</style>
+
+<div class="postBoxContainer">
+	<div class="newPostBody" ng-class="{newPostBodyActive : activeTextArea}">
+		<textarea class="newPostArea " ng-class="{newPostAreaActive : activeTextArea}" ng-model="postText" ng-click="activeTextArea = true;"></textarea>
+		<button class="btn btn-custom newPostButton " ng-click="postItem(postText); postText = '';">Share</button>
+</div>

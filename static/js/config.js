@@ -1,0 +1,10 @@
+var INSTANCE_URL = 'eu3.salesforce.com';
+var SERVICE_URL = 'https://afternoon-tundra-4730.herokuapp.com';
+var CLIENT_ID = "3MVG9A_f29uWoVQsLFgPnlo9DYXJF_wmOdVkaR6gW05Bw6pIFkRcHbuDRAgZ.f8t2CVqtaGcJBtUUl62Zu8M5";
+var REDIRECT_URI = "https://afternoon-tundra-4730.herokuapp.com/static/auth.html";
+var AUTH_LINK = "https://login.salesforce.com/services/oauth2/authorize?response_type=token&client_id=" + CLIENT_ID + "&redirect_uri=" + REDIRECT_URI + "&display=touch&state=success";
+var FEED_ITEM_TEMPLATE = 'templates/feedItem.html';
+var GROUP_ITEM_TEMPLATE = 'templates/groupItem.html';
+var POST_BOX_TEMPLATE = 'templates/postBox.html';
+var FILE_ITEM_TEMPLATE = 'templates/fileItem.html';
+var FILE_ITEM_HEADER_TEMPLATE = 'templates/fileItemHeader.html';

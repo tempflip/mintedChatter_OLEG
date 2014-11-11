@@ -1,0 +1,172 @@
+<style>
+.itemIcon {
+	float: left;
+}
+.itemContainer {
+	margin-bottom: 20px;
+	width: 100%	;
+}
+.itemIcon img {
+	width: 45px;
+	height: 45px;
+}
+.itemHeader {
+	margin-left: 50px;
+	margin-bottom: 5px;
+	font-weight: bold;
+	font-size: 12px;
+}
+.itemBody {
+	margin-bottom: 10px;
+	margin-left: 50px;
+}
+.itemDownload {
+	border: #BDBDBD solid 1px;
+	padding: 10px;
+	margin-bottom: 10px;
+	margin-left: 50px;
+}
+.itemLink {
+	border: #BDBDBD solid 1px;
+	padding: 10px;
+	margin-bottom: 10px;
+	margin-left: 50px;
+}
+.itemLikes {
+	border-top: 1px solid ;
+	color: #BDBDBD;
+	background: #FAFAFA;
+	padding: 5px;
+	margin-left: 50px;
+	font-size: 11px;
+}
+.itemTools {
+	margin-left: 50px;
+	margin-bottom: 5px;
+	font-size: 11px;
+}
+.commentContainer, .newCommentContainer {
+	border-top: 1px solid #BDBDBD;	
+	background: #FAFAFA;
+	padding: 5px;
+	margin-left: 50px;
+}
+.commentIcon {
+	float: left;
+}
+.commentIcon img {
+	width: 30px;
+	height: 30px
+}
+.commentHeader {
+	margin-left: 35px;
+	font-weight: bold;
+}
+.commentBody {
+	margin-left: 35px;
+}
+.commentLikes {
+	margin-left: 35px;
+	font-size: 11px;
+}
+.newCommentBody {
+	margin-left: 35px;
+	font-size: 11px;
+}
+.newCommentBody textarea {
+	width: 100%;
+	height: 38px;
+	margin-bottom: 5px;
+}
+.newCommentButton {
+	margin-left: 35px;
+	text-align: right;
+}
+.actionButton {
+	font-size: 11px;
+	margin-right: 15px;
+}
+.newCommentButton {
+	font-size: 11px;
+
+}
+</style>
+
+<div class="itemContainer">
+	<div class="itemIcon">
+		<img src="{{element.photoUrl}}" />
+	</div>
+
+	<div>
+		<div class="itemHeader">
+			<span ng-repeat="headerMessageSegment in element.header.messageSegments">
+				{{headerMessageSegment.text}}
+			</span>	
+		</div>
+		
+		<div class="itemBody">
+			<span ng-bind-html="element.body.text | linebreak"></span>
+		</div>
+
+		<div class="itemDownload" ng-show="{{element.capabilities.content}}">
+			<a href="#" ng-click="getFile(element.capabilities.content.downloadUrl);">{{element.capabilities.content.title}}</a>
+			<br/>
+			Filetype:
+			{{element.capabilities.content.fileType}}
+		</div>
+
+		<div class="itemLink" ng-show="{{element.capabilities.link}}">
+			<a href="{{element.capabilities.link.url}}" target="_blank">{{element.capabilities.link.urlName}}</a>
+			</br>
+			{{element.capabilities.link.url}}
+		</div>
+
+		<div class="itemTools">
+			<a class="actionButton" href="#" ng-click="newComment = true;">Comment</a>
+			<a class="actionButton" href="#" ng-click="likeItem(element.id)">Like</a>
+			<a class="actionButton" href="#" ng-click="bookmarkItem(element.id)">Bookmark</a>
+			{{element.createdDate | prettydate}}
+			
+			<span ng-show="itemActionLoading">
+				<!--<img src="https://38.media.tumblr.com/1269e7289b005966b1eacdff7283fd67/tumblr_mnd1m26t491sqd49ro1_400.gif" width="40" height="40" />-->
+			</span>
+		</div>
+
+		<div class="itemLikes" ng-show="element.capabilities.chatterLikes.likesMessage">
+			{{element.capabilities.chatterLikes.likesMessage.text}}
+		</div>
+
+		<div class="commentContainer" ng-repeat="item in element.capabilities.comments.page.items">
+			<div class="commentIcon">
+				<img src="{{item.user.photo.smallPhotoUrl}}" />
+			</div>
+
+			<div class="commentHeader">
+				{{item.user.displayName}}
+			</div>
+
+			<div class="commentBody">
+				<span ng-bind-html="item.body.text | linebreak"></span>	
+			</div>
+
+			<div class="commentLikes">
+				{{item.likesMessage.text}}
+				{{item.createdDate | prettydate}}
+			</div>
+		</div>
+
+		<div ng-show="commentLoading">
+			<!--<img src="https://33.media.tumblr.com/6abb472734002fa7143f8003e771ac19/tumblr_mqm9amwnsP1sv98gio1_400.gif" width="80" height="80" />-->
+		</div>
+
+		<div class="newCommentContainer" ng-show="newComment && !commentLoading">
+			<div class="newCommentBody">
+				<textarea ng-model="comment" rows="3" ></textarea>
+			</div>
+
+			<div>
+				<button class="newCommentButton btn btn-custom" ng-click="postComment();">Comment</button>
+			</div>
+		</div>
+	</div>
+</div>

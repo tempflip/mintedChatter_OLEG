@@ -1,0 +1,20 @@
+{
+  "name": "mintedChatter",
+  "version": "1.0.0",
+  "description": "A barebones Node.js app using [Express 4](http://expressjs.com/).",
+  "main": "chatter_REST.js",
+  "dependencies": {
+    "cors": "^2.4.2",
+    "express": "^4.9.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@heroku.com:afternoon-tundra-4730.git"
+  },
+  "author": "",
+  "license": "MIT"
+}

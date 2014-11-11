@@ -1,0 +1,54 @@
+<style>
+.fileLine {
+	clear:both;	
+	width: 100%;
+	margin-top: 10px;
+	border-top: 1px solid #BDBDBD;
+}
+.fileLink {
+	width: 50%;
+	float: left;
+	padding-top: 5px;
+	background: #FAFAFA;
+	font-weight: bold;
+}
+.fileName {
+	width: 30%;
+	float: left;
+	padding-top: 5px;
+	background: #FAFAFA;
+}
+.fileDate {
+	width: 20%;
+	float: left;
+	padding-top: 5px;
+	background: #FAFAFA;
+	text-align: right;
+}
+.fileText {
+	clear: both;
+	width: 100%;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #BDBDBD;
+	background: #FAFAFA;
+	font-size: 11px;
+}
+</style>
+<div class="fileLine">
+		<div class="fileLink">
+			<a href="#" ng-click="getFile(item.attachment.downloadUrl);">{{item.attachment.title}}</a>
+		</div>
+
+		<div class="fileName">
+			{{item.parent.name}}
+		</div>
+
+		<div class="fileDate">
+			{{item.modifiedDate | prettydate}}
+		</div>
+</div>
+<div class="fileText">
+	<span ng-bind-html="item.body.text | linebreak"></span>
+</div>

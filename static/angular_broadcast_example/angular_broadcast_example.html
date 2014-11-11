@@ -1,0 +1,22 @@
+<html>
+
+<head>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="angular_broadcast_example.js"></script>
+</head>
+
+<body ng-app="broadcastExample" ng-controller="breController">
+{{message}}
+<p>
+
+<input ng-model="m">
+<button ng-click="send(m);">Send!</button>
+<p>
+
+<first-directive></first-directive>
+
+<first-directive></first-directive>
+
+<logger-directive></logger-directive>
+</body>

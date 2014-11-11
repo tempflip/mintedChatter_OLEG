@@ -1,0 +1,157 @@
+<html>
+
+<head>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-cookies.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/directives.js"></script>
+	<script src="js/config.js"></script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<style>
+body {
+	font-family: sansationregular, Arial, sans-serif;
+}
+
+.btn-custom {
+	color: #fff;
+	background-color: #C95815;
+	border-color: #222222;
+}
+h, a {
+	color: #C95815;
+}
+.myUserInfo {
+	width: 100%;
+	height: 70px;
+	//border-bottom: solid 1 grey;
+}
+.myUserInfoIcon {
+	float: left;
+}
+.myUserInfoIcon img {
+	width:45;
+	height: 45;
+}
+.myUserName {
+	font-weight: bold;
+	margin-left: 50px;
+}
+.menuItem {
+	width: 100%;
+	clear: both;
+	background: #FBD95A;
+}
+.menuItem:hover {
+	width: 100%;
+	clear: both;
+	background: #C95815;
+	color: #FFFFFF;
+}
+.menuItem:hover a {
+	color: #FFFFFF;
+}
+.groupsLabel {
+	//border-bottom: solid 1 grey;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.topicsLabel {
+	//border-bottom: solid 1 grey;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.topic {
+	margin-right: 6px;
+	font-size: 11px;
+}
+.logoContainer {
+	margin-bottom: 15px;
+}
+#logo {
+	width: 170px;
+}
+</style>
+
+<div ng-app="chatterREST" ng-controller="chatterController">
+	<div class="row">
+		<div class="col-xs-4 col-sm-2 col-md-2">
+			<div class="logoContainer">
+				<img id="logo" src="assets/bud_chatter_logo.png"/>
+			</div>
+
+			<div class="myUserInfo">
+				<div class="myUserInfoIcon">
+					<img src="{{myUserData.photo.smallPhotoUrl}}"/>
+				</div>
+
+				<div class="myUserName">
+					{{myUserData.displayName}}
+				</div>
+			</div>
+
+			<div class="menuItem">
+				<a href="#" ng-click="getNewsFeed();">My Feed</a>
+			</div>
+
+			<div class="menuItem">
+				<a href="#" ng-click="getBookmarksFeed();">My Bookmarks</a>
+			</div>
+
+			<div class="menuItem">
+				<a href="#" ng-click="getFilesFeed();">Files Feed</a>
+			</div>
+
+			<div class="groupsLabel">
+				My groups
+			</div>
+
+			<div>
+				<group-item group="group" ng-repeat="group in groups"/>
+			</div>
+
+			<div class="topicsLabel">
+				Topics
+			</div>
+
+			<div class="topicList">
+				<span class="topic" ng-repeat="topic in topics">
+					<a href="#" ng-click="getTopicFeed(topic.id, topic.name);">{{topic.name}}</a>
+				</span>
+			</div>
+		</div> <!-- end of sidebar column-->
+
+		<div class="col-xs-8 col-sm-7 col-md-7">
+			<h1 ng-show="showFeed">{{currentFeedTitle}}</h1>
+			<h1 ng-show="showFileFeed">Files Feed</h1>
+
+			<post-box subject="currentFeedId" ng-show="showFeed && feedWritable && !feedLoading"></post-box>
+
+			<div ng-show="feedLoading">
+				<!--<img src="https://33.media.tumblr.com/6abb472734002fa7143f8003e771ac19/tumblr_mqm9amwnsP1sv98gio1_400.gif" width="150" height="150" />-->
+			</div>
+
+			<feed-item element="element" ng-repeat="element in feed" ng-show="showFeed"></feed-item>
+
+			<file-item-header ng-show="showFileFeed"></file-item-header>
+			<file-item item="item" ng-repeat="item in fileFeed" ng-show="showFileFeed"></file-item>
+		</div> <!--end of feed column -->
+	</div> <!--end of main row-->
+</div>
+
+<script>
+	$(document).ready(function() {
+		$("#authLink").attr("href", AUTH_LINK);
+	});
+</script>
+
+</body>
+</html>
