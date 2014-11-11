@@ -17,7 +17,8 @@ h, a {
 .myUserInfo {
 	width: 100%;
 	height: 70px;
-	//border-bottom: solid 1 grey;
+	border-bottom: 1px solid #e9eaea;
+	border-right: 1px solid #e9eaea;
 }
 .myUserInfoIcon {
 	float: left;
