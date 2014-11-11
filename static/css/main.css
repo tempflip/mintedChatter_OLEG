@@ -165,6 +165,8 @@ color: #015ba7;
 	margin-left: 50px;
 	margin-bottom: 5px;
 	font-size: 11px;
+  position: relative;
+  bottom: -10px;
 }
 .itemTools a {
   color: #015ba7;
@@ -175,6 +177,7 @@ color: #015ba7;
 	background: #fbfbfb;
 	padding: 5px;
 	margin-left: 50px;
+  margin-top: 20px;
 }
 .commentIcon {
 	float: left;
