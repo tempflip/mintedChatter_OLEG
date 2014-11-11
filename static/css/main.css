@@ -66,6 +66,9 @@ h, a {
 #logo {
 	width: 170px;
 }
+.leftNavWrap {
+  border-right: 1px solid #e9eaea;
+}
 .leftNav .menuItem {
   list-style: none;
   margin-left: 0;
