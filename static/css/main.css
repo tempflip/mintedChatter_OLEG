@@ -28,8 +28,10 @@ h, a {
 	height: 45;
 }
 .myUserName {
+  color: #015ba7;
 	font-weight: bold;
 	margin-left: 50px;
+  line-height: 30px;
 }
 .menuItem {
 	width: 100%;
