@@ -67,12 +67,10 @@
 
 		<div class="newCommentContainer" ng-show="newComment && !commentLoading">
 			<div class="newCommentBody">
-        <div class="row">
-          <div class="myUserInfoIcon col-xs-3 col-sm-3 col-md-3">
-            <img src="{{myUserData.photo.smallPhotoUrl}}" height="30" width="30"/>
-          </div>
-          <textarea class="col-xs-9 col-sm-9 col-md-9" ng-model="comment" rows="3" ></textarea>
-        </div>
+				<div class="myUserInfoIcon">
+					<img src="{{myUserData.photo.smallPhotoUrl}}" height="30" width="30"/>
+				</div>
+				<textarea ng-model="comment" rows="3" ></textarea>
 				<button class="btnGrey newCommentBtn" ng-click="postComment();">Comment</button>
 			</div>
 
