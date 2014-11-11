@@ -200,16 +200,27 @@ color: #015ba7;
 	height: 38px;
 	margin-bottom: 5px;
 }
-.newCommentButton {
-	margin-left: 35px;
-	text-align: right;
+.bntGrey {
+  color: #222;
+  border: 1px solid #c3c3c3;
+  border-color: #c3c3c3 #aaa #909090;
+  font-size: .917em;
+  font-weight: bold;
+  text-decoration: none;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background: #f0f0f0;
+  background: -moz-linear-gradient(#fff,#f0f0f0);
+  background: -webkit-linear-gradient(#fff,#f0f0f0);
+  background: -ms-linear-gradient(#fff,#f0f0f0);
+  padding: 3px 6px;
+}
+.newCommentBtn {
+  float: right;
+  margin: 0 -10px 0 0;
 }
 .actionButton {
-	font-size: 11px;
-	margin-right: 15px;
-}
-.newCommentButton {
-	font-size: 11px;
-
+  font-size: 11px;
+  margin-right: 15px;
 }
 /* FEED ITEM PAGE END */
