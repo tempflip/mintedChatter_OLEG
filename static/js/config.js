@@ -1,7 +1,7 @@
-var INSTANCE_URL = 'eu3.salesforce.com';
-var SERVICE_URL = 'https://afternoon-tundra-4730.herokuapp.com';
-var CLIENT_ID = "3MVG9A_f29uWoVQsLFgPnlo9DYXJF_wmOdVkaR6gW05Bw6pIFkRcHbuDRAgZ.f8t2CVqtaGcJBtUUl62Zu8M5";
-var REDIRECT_URI = "https://afternoon-tundra-4730.herokuapp.com/static/auth.html";
+var INSTANCE_URL = 'eu5.salesforce.com';
+var SERVICE_URL = 'https://shrouded-depths-9396.herokuapp.com';
+var CLIENT_ID = "3MVG9Rd3qC6oMalWKLeYSlRoJqlP5HiW.lDZD_Rj4a_d1nYXULSz_hyRTM90rxkYczHzFAEXKU9M5zM6Ov8xf";
+var REDIRECT_URI = "https://shrouded-depths-9396.herokuapp.com/static/auth.html";
 var AUTH_LINK = "https://login.salesforce.com/services/oauth2/authorize?response_type=token&client_id=" + CLIENT_ID + "&redirect_uri=" + REDIRECT_URI + "&display=touch&state=success";
 var FEED_ITEM_TEMPLATE = 'templates/feedItem.html';
 var GROUP_ITEM_TEMPLATE = 'templates/groupItem.html';
