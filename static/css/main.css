@@ -102,3 +102,15 @@ h, a {
   width: 16px;
   height: 16px;
 }
+.leftNav .menuItem.groupListView .trigger .icon {
+  background-image: url(../images/chattersupersprite.png);
+  background-position: 0 -642px;
+  width: 16px;
+  height: 16px;
+}
+.leftNav .menuItem.groupListView .trigger .icon {
+  background-image: url(../images/chattersupersprite.png);
+  background-position: 0 -1362px;
+  width: 16px;
+  height: 16px;
+}

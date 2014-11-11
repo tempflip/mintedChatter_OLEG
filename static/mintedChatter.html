@@ -44,24 +44,23 @@
         <li class="menuItem">
           <a class="trigger" href="#" ng-click="getFilesFeed();">Files Feed</a>
         </li>
-      </ul>
-			<div class="groupsLabel">
-				My groups
-			</div>
-
-			<div>
+        <li class="menuItem groupListView">
+          <a class="trigger" href="#">
+            <span class="icon"></span>
+            My Groups
+          </a>
+        </li>
 				<group-item group="group" ng-repeat="group in groups"/>
-			</div>
-
-			<div class="topicsLabel">
-				Topics
-			</div>
-
-			<div class="topicList">
-				<span class="topic" ng-repeat="topic in topics">
+        <li class="menuItem topicListView">
+          <a class="trigger" href="#">
+            <span class="icon"></span>
+            Topics
+          </a>
+        </li>
+				<li class="topic" ng-repeat="topic in topics">
 					<a href="#" ng-click="getTopicFeed(topic.id, topic.name);">{{topic.name}}</a>
-				</span>
-			</div>
+				</li>
+      </ul>
       </div>
 		</div> <!-- end of sidebar column-->
 
