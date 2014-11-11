@@ -69,6 +69,7 @@ h, a {
 .leftNav .menuItem {
   list-style: none;
   margin-left: 0;
+  line-height: 23px;
   position: relative;
 }
 .leftNav .menuItem.selected {
