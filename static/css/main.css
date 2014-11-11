@@ -134,6 +134,8 @@ color: #015ba7;
 	margin-bottom: 5px;
 	font-weight: bold;
 	font-size: 12px;
+  position: relative;
+  top: -8px;
 }
 .itemBody {
 	margin-bottom: 10px;
@@ -195,6 +197,7 @@ color: #015ba7;
 .newCommentBody {
 	margin-left: 35px;
 	font-size: 11px;
+  overflow: hidden;
 }
 .newCommentBody textarea {
 	width: 100%;
