@@ -1,0 +1,64 @@
+body {
+	font-family: sansationregular, Arial, sans-serif;
+}
+
+.btn-custom {
+	color: #fff;
+	background-color: #C95815;
+	border-color: #222222;
+}
+h, a {
+	color: #C95815;
+}
+.myUserInfo {
+	width: 100%;
+	height: 70px;
+	//border-bottom: solid 1 grey;
+}
+.myUserInfoIcon {
+	float: left;
+}
+.myUserInfoIcon img {
+	width:45;
+	height: 45;
+}
+.myUserName {
+	font-weight: bold;
+	margin-left: 50px;
+}
+.menuItem {
+	width: 100%;
+	clear: both;
+	background: #FBD95A;
+}
+.menuItem:hover {
+	width: 100%;
+	clear: both;
+	background: #C95815;
+	color: #FFFFFF;
+}
+.menuItem:hover a {
+	color: #FFFFFF;
+}
+.groupsLabel {
+	//border-bottom: solid 1 grey;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.topicsLabel {
+	//border-bottom: solid 1 grey;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.topic {
+	margin-right: 6px;
+	font-size: 11px;
+}
+.logoContainer {
+	margin-bottom: 15px;
+}
+#logo {
+	width: 170px;
+}

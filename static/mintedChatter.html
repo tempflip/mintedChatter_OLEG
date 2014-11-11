@@ -9,78 +9,11 @@
 	<script src="js/config.js"></script>
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-
-<style>
-body {
-	font-family: sansationregular, Arial, sans-serif;
-}
-
-.btn-custom {
-	color: #fff;
-	background-color: #C95815;
-	border-color: #222222;
-}
-h, a {
-	color: #C95815;
-}
-.myUserInfo {
-	width: 100%;
-	height: 70px;
-	//border-bottom: solid 1 grey;
-}
-.myUserInfoIcon {
-	float: left;
-}
-.myUserInfoIcon img {
-	width:45;
-	height: 45;
-}
-.myUserName {
-	font-weight: bold;
-	margin-left: 50px;
-}
-.menuItem {
-	width: 100%;
-	clear: both;
-	background: #FBD95A;
-}
-.menuItem:hover {
-	width: 100%;
-	clear: both;
-	background: #C95815;
-	color: #FFFFFF;
-}
-.menuItem:hover a {
-	color: #FFFFFF;
-}
-.groupsLabel {
-	//border-bottom: solid 1 grey;
-	font-weight: bold;
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-.topicsLabel {
-	//border-bottom: solid 1 grey;
-	font-weight: bold;
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-.topic {
-	margin-right: 6px;
-	font-size: 11px;
-}
-.logoContainer {
-	margin-bottom: 15px;
-}
-#logo {
-	width: 170px;
-}
-</style>
-
 <div ng-app="chatterREST" ng-controller="chatterController">
 	<div class="row">
 		<div class="col-xs-4 col-sm-2 col-md-2">
@@ -97,19 +30,17 @@ h, a {
 					{{myUserData.displayName}}
 				</div>
 			</div>
-
-			<div class="menuItem">
-				<a href="#" ng-click="getNewsFeed();">My Feed</a>
-			</div>
-
-			<div class="menuItem">
-				<a href="#" ng-click="getBookmarksFeed();">My Bookmarks</a>
-			</div>
-
-			<div class="menuItem">
-				<a href="#" ng-click="getFilesFeed();">Files Feed</a>
-			</div>
-
+      <ul>
+        <li class="menuItem">
+          <a href="#" ng-click="getNewsFeed();">My Feed</a>
+        </li>
+        <li class="menuItem">
+          <a href="#" ng-click="getBookmarksFeed();">My Bookmarks</a>
+        </li>
+        <li class="menuItem">
+          <a href="#" ng-click="getFilesFeed();">Files Feed</a>
+        </li>
+      </ul>
 			<div class="groupsLabel">
 				My groups
 			</div>
