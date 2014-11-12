@@ -177,13 +177,23 @@ span.truncateLabel {
 	font-size: 11px;
 }
 .newPostArea {
-	float:left;
 	height: 30px;
 	width: 100%;
 	font-size: 11px;
-	margin-right: 27px;
-	margin-bottom: 5px;
 }
 .newPostAreaActive {
 	height: 70px;
+}
+
+.publishercontainer .bottomBar {
+	padding: 9px;
+	height: 30px;
+	line-height: 30px;
+	background: #f5f6f6;
+	border: 1px solid #c7ccce;
+	border-top: none;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
 }
