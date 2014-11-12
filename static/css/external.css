@@ -69,6 +69,10 @@
 	overflow: hidden;
 }
 
+.publisherFeedItemTypeChoice .publisherattachtext{
+	color: #015ba7;
+}
+
 a.publisherattach:link .publisherattachtext{
 	text-decoration: none;
 	font-weight: normal;
@@ -168,13 +172,19 @@ span.truncateLabel {
 	width: 100%;
 	margin-bottom: 30px;
 }
+
+.postBoxContainer textarea{
+	border: 1px solid #c7ccce;
+}
 .newPostBody {
 }
 .newPostBodyActive {
-	height: 80px;
+	
 }
 .newPostButton {
 	font-size: 11px;
+	background-color: #8ab529;
+	border: 1px solid #6c8049;
 }
 .newPostArea {
 	height: 30px;
@@ -187,8 +197,6 @@ span.truncateLabel {
 
 .publishercontainer .bottomBar {
 	padding: 9px;
-	height: 30px;
-	line-height: 30px;
 	background: #f5f6f6;
 	border: 1px solid #c7ccce;
 	border-top: none;
@@ -196,4 +204,23 @@ span.truncateLabel {
 	border-radius: 3px;
 	border-top-left-radius: 0;
 	border-top-right-radius: 0;
+	overflow: hidden;
+}
+
+.publishercontainer .bottomBarLeft {
+	float: left;
+}
+
+.postTo {
+	display: inline-block;
+	vertical-align: top;
+	line-height: 30px;
+}
+
+.postToTarget{
+	font-weight: bold;
+}
+
+.publishercontainer .bottomBarRight {
+	float: right;
 }
