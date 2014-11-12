@@ -82,8 +82,18 @@
 
 			<feed-item element="element" ng-repeat="element in feed" ng-show="showFeed"></feed-item>
 
-			<file-item-header ng-show="showFileFeed"></file-item-header>
-			<file-item item="item" ng-repeat="item in fileFeed"></file-item>
+      <div ng-show="showFileFeed">
+        <div class="greyBlock">
+          <input type="text" class="inputSearch" placeholder="Search All Files..." autocomplete="off">
+          <button class="btnGrey" ng-click="">Search</button>
+        </div>
+        <table class="greyTable">
+          <file-item-header ng-show="showFileFeed"></file-item-header>
+          <tbody>
+            <file-item item="item" ng-repeat="item in fileFeed" ng-show="showFileFeed"></file-item>
+          </tbody>
+        </table>
+      </div>
 		</div> <!--end of feed column -->
 	</div> <!--end of main row-->
 </div>
