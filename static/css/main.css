@@ -124,6 +124,18 @@ color: #015ba7;
 .fileListView {
   background-position: 0 -562px;
 }
+
+.addPost{
+  background-position: 0px 758px;
+}
+
+.addFile{
+  background-position: 0px 918px;
+}
+
+.addEvent{
+  background-position: 0px 798px;
+}
 /*ICONS END*/
 
 /* FEED ITEM PAGE */
