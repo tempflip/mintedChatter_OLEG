@@ -21,12 +21,10 @@
 			<div class="logoContainer">
 				<img id="logo" src="assets/bud_chatter_logo.png"/>
 			</div>
-
 			<div class="myUserInfo">
 				<div class="myUserInfoIcon">
 					<img src="{{myUserData.photo.smallPhotoUrl}}"/>
 				</div>
-
 				<div class="myUserName">
 					{{myUserData.displayName}}
 				</div>
@@ -49,10 +47,10 @@
           </a>
         </li>
         <li class="menuItem">
-          <a class="trigger" href="#">
+          <span class="trigger" href="#">
             <span class="icon groupListView"></span>
             My Groups
-          </a>
+          </span>
         </li>
 				<group-item group="group" ng-repeat="group in groups"/>
         <li class="menuItem">
