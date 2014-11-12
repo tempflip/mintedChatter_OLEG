@@ -76,6 +76,19 @@
 	box-shadow: 0 0 4px #b1b2b4;
 }
 
+.publish .publish-options {
+	top: 100%;
+	left: 3px;
+	right: 3px;
+	margin: 0;
+	display: none;
+	overflow: hidden;
+}
+
+.publish .publish-options.publish-options-show{
+	display: block;
+}
+
 .publisherTypeOverflow .publish-options {
 	position: relative;
 	top: -13px;
