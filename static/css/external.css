@@ -224,3 +224,197 @@ span.truncateLabel {
 .publishercontainer .bottomBarRight {
 	float: right;
 }
+
+.publishercontainer .customPanel.alignTop {
+	border-bottom: 0;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	-moz-border-radius: 3px 3px 0 0;
+}
+
+.publishercontainer .customPanel {
+	border: 1px solid #c7ccce;
+	background-image: url(/img/chatter/innershadow-normal.png);
+	background-position: 0 0;
+	width: 0;
+	height: 0;
+	background-color: #fff;
+	background-repeat: repeat-x;
+	width: auto;
+	height: auto;
+}
+
+.contentPublisherSlideDown .panelBody {
+padding-top: 10px;
+}
+
+.contentPublisherSlideDown .panel {
+	padding-bottom: 10px;
+}
+
+.publishercontainer .clear {
+clear: both;
+}
+
+.publishercontainer .panelBody {
+position: relative;
+}
+
+.contentPublisherSlideDown .chatterPublisherActionsContainer {
+margin: auto;
+padding: 0;
+}
+
+.contentPublisherSlideDown .chatterPublisherActionsContainer {
+width: 100%;
+}
+
+.contentPublisherSlideDown .chatterPublisherActionsContainer td {
+width: 50%;
+text-align: center;
+text-decoration: none;
+white-space: normal;
+}
+
+.profileSection a {
+word-wrap: break-word;
+}
+
+.contentPublisherSlideDown td a {
+margin-left: 5px;
+margin-right: 10px;
+text-decoration: none;
+color: #015ba7;
+display: block;
+border-radius: 5px;
+-moz-border-radius: 5px;
+border: 1px solid #c7ccce;
+padding: 15px 0;
+}
+
+.contentPublisherSlideDown td.chatterPublisherFileActionContainerLeft a {
+margin-right: 5px;
+margin-left: 10px;
+}
+
+.publishercontainer {
+line-height: normal;
+padding-top: 10px;
+max-width: 640px;
+overflow: visible;
+position: relative;
+padding-bottom: 20px;
+padding-right: 10px;
+}
+
+.publishercontainer .publisherTextAreaInner {
+background-image: url(/img/chatter/innershadow-normal.png);
+background-position: 0 0;
+width: 0;
+height: 0;
+width: auto;
+height: auto;
+background-color: #fff;
+background-repeat: repeat-x;
+position: relative;
+border: 1px solid #c7ccce;
+padding: 7px 7px 6px 7px;
+}
+
+.publishercontainer .publishertextarea {
+color: #999;
+border: none;
+resize: none;
+width: 100%;
+overflow: hidden;
+background-color: #fff;
+line-height: 16px;
+-webkit-line-break: after-white-space;
+word-wrap: break-word;
+outline-style: none;
+height: 48px;
+display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
