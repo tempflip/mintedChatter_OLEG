@@ -204,12 +204,12 @@ span.truncateLabel {
 	border: 1px solid #c7ccce;
 }
 
-.postBoxContainer textarea::-webkit-textarea-placeholder {
+textarea::-webkit-textarea-placeholder {
 	padding-left: 10px;
 	padding-top: 8px;
 	font-size: 12px;
 }
-.postBoxContainer textarea:-moz-placeholder {
+textarea:-moz-placeholder {
 	padding-left: 10px;
 	padding-top: 8px;
 	font-size: 12px;
