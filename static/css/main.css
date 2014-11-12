@@ -210,6 +210,10 @@ color: #015ba7;
 	margin-bottom: 35px;
 	width: 100%	;
 }
+.itemContainer .itemComment {
+  color: #222;
+  font-size: 12px;
+}
 .itemIcon img {
 	width: 45px;
 	height: 45px;
