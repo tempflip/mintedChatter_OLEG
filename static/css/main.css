@@ -5,6 +5,9 @@ body a:hover {
 text-decoration: underline;
 color: #015ba7;
 }
+.hide {
+  display: none;
+}
 
 .btn-custom {
 	color: #fff;
@@ -219,6 +222,11 @@ color: #015ba7;
 	padding: 10px;
 	margin-bottom: 10px;
 	margin-left: 50px;
+  overflow: hidden;
+}
+.itemDownload .doctype_unknown_48 {
+  float: left;
+  margin-right: 0px;
 }
 .itemLink {
 	border: #BDBDBD solid 1px;
