@@ -69,6 +69,10 @@
 	overflow: hidden;
 }
 
+.publisherFeedItemTypeChoice .publisherattachtext{
+	color: #015ba7;
+}
+
 a.publisherattach:link .publisherattachtext{
 	text-decoration: none;
 	font-weight: normal;
