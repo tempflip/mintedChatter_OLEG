@@ -69,7 +69,7 @@
 	line-height: 16px;
 }
 
-.publish .clicked .publish-trigger {
+.publish .publish-trigger.clicked {
 	bottom: 10px;
 	padding-top: 9px;
 	padding-left: 14px;
@@ -102,6 +102,7 @@
 }
 
 .publisherTypeOverflow .publish-options {
+	padding-left: 0px;
 	position: relative;
 	top: -13px;
 	left: -5px;
@@ -131,7 +132,7 @@
 	outline: none;
 }
 
-.clicked .publish-options .publisherFeedItemTypeChoice {
+.publish-select .publish-options .publisherFeedItemTypeChoice {
 	width: 100%;
 	padding-left: 10px;
 	padding-top: 7px;
