@@ -105,6 +105,7 @@ color: #015ba7;
 /*ICONS*/
 .icon {
   background-image: url(../images/chattersupersprite.png);
+  display: inline-block;
   width: 16px;
   height: 16px;
 }
