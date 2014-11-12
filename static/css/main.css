@@ -124,6 +124,9 @@ color: #015ba7;
   background-position: 0 -1222px;
   margin-left: 10px;
   margin-bottom: -5px;
+  -webkit-filter: grayscale(100%);
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter …33 .3333 0 0 .3333 .3333 .3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+  filter: gray;
 }
 
 .feedTypeList {
