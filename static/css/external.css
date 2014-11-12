@@ -363,14 +363,12 @@ padding-right: 10px;
 }
 
 .publishercontainer .publisherTextAreaInner {
-background-image: url(../images/innershadow-normal.png);
-background-position: 0 0;
-width: 0;
-height: 0;
+-webkit-box-shadow: inset 0px 1px 2px 1px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    inset 0px 1px 2px 1px rgba(50, 50, 50, 0.75);
+box-shadow:         inset 0px 1px 2px 1px rgba(50, 50, 50, 0.75);
 width: auto;
 height: auto;
 background-color: #fff;
-background-repeat: repeat-x;
 position: relative;
 border: 1px solid #c7ccce;
 }
