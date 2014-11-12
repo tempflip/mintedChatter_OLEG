@@ -109,6 +109,14 @@ color: #015ba7;
   width: 16px;
   height: 16px;
 }
+
+.iconColor{
+  background-image: url(../images/chattericons.png);
+  -webkit-filter: grayscale(100%);
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter …33 .3333 0 0 .3333 .3333 .3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+  filter: gray;
+}
+
 .feedTypeList {
   background-position: 0 -322px;
 }
@@ -134,15 +142,15 @@ color: #015ba7;
 }
 
 .addEvent{
-  background-position: 0px 798px;
+  background-position: 0 -22px;
 }
 
 .moreTask{
-
+  background-position: 0 -342px;
 }
 
 .moreContact{
-
+  background-position: 0 -82px;
 }
 
 .moreCall{
@@ -150,31 +158,31 @@ color: #015ba7;
 }
 
 .moreOpport{
-
+  background-position: 0 -242px;
 }
 
 .moreCase{
-
+  background-position: 0 -62px;
 }
 
 .moreLead{
-
+  background-position: 0 -202px;
 }
 
 .moreLink{
-
+  background-position: 0 -1042px;
 }
 
 .morePoll{
-
+  background-position: 0 -1062px;
 }
 
 .moreQuestion{
-
+  background-position: 0 -1082px;
 }
 
 .moreAnnounce{
-  
+  background-position: 0 -982px;
 }
 /*ICONS END*/
 

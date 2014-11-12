@@ -38,7 +38,6 @@
 }
 
 .publishercontainer a.publisherattach {
-	height: 16px;
 	display: inline-block;
 	position: relative;
 	vertical-align: top;
@@ -57,19 +56,14 @@
 .publisherTypeOverflow .publish-trigger {
 	left: -5px;
 	white-space: nowrap;
-	overflow: hidden;
 	padding-left: 15px;
-	height: 16px;
 	position: relative;
 	min-width: 10px;
 	max-width: 300px;
-	border-color: #dadada;
-	border-width: 1px;
-	z-index: 1000;
 	line-height: 16px;
 }
 
-.publish .clicked .publish-trigger {
+.publish .publish-trigger.clicked {
 	bottom: 10px;
 	padding-top: 9px;
 	padding-left: 14px;
@@ -94,8 +88,27 @@
 	left: 3px;
 	right: 3px;
 	margin: 0;
-	display: none;
 	overflow: hidden;
+}
+
+a.publisherattach:link .publisherattachtext{
+	text-decoration: none;
+	font-weight: normal;
+	color: #222;
+}
+
+span.truncateLabel {
+	max-width: 85px;
+	white-space: nowrap;
+	overflow-x: hidden;
+	display: inline-block;
+	text-overflow: ellipsis;
+}
+
+.publishercontainer .publisherFeedItemTypeChoices a.publisherattach, a.cxcontentcommentaction, span.cxcontentcommentactiontext {
+	color: #015ba7;
+	font-weight: bold;
+	text-decoration: none;
 }
 
 .publish .publish-options.publish-options-show{
@@ -103,6 +116,7 @@
 }
 
 .publisherTypeOverflow .publish-options {
+	padding-left: 0px;
 	position: relative;
 	top: -13px;
 	left: -5px;
@@ -125,9 +139,15 @@
 	list-style: none;
 }
 
-.publisherTypeOverflow.publish-open .publish-options .publisherFeedItemTypeChoice {
+.publish-options li .publisherattach:hover{
+	color: #015ba7;
+	background-color: #e3f3ff;
+	text-decoration: none;
+	outline: none;
+}
+
+.publish-select .publish-options .publisherFeedItemTypeChoice {
 	width: 100%;
-	padding-left: 10px;
 	padding-top: 7px;
 	padding-bottom: 7px;
 	padding-right: 15px;
@@ -137,4 +157,17 @@
 	margin-left: 5px;
 	line-height: 16px;
 	vertical-align: top;
+}
+
+.publishercontainer .publisherattach span.pArrow {
+	position: absolute;
+	bottom: -11px;
+	left: 50%;
+	margin-left: -8px;
+	display: none;
+	background-image: url(../images/chattersupersprite.png);
+	background-position: 0 -261px;
+	width: 13px;
+	height: 9px;
+	z-index: 2;
 }
