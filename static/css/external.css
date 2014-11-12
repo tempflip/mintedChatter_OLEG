@@ -33,12 +33,14 @@
 	display: inline;
 	height: 14px;
 	margin-right: 13px;
+	vertical-align: top;
 }
 
 .publishercontainer a.publisherattach {
 	height: 16px;
 	display: inline-block;
 	position: relative;
+	vertical-align: top;
 }
 
 .publisherTypeOverflow.publish-select {
@@ -62,6 +64,7 @@
 	border-radius: 2px 2px 0 0;
 	border-color: #dadada;
 	border-width: 1px;
+	z-index: 1000;
 }
 
 .publish-options {
