@@ -260,7 +260,7 @@ color: #015ba7;
 /* FEED ITEM PAGE END */
 
 .inputSearch {
-  background: url("../images/func_icons/util/search16.png") no-repeat scroll 3px #fff;
+  background: url("../images/search16.png") no-repeat scroll 3px #fff;
   box-shadow: 0 1px 1px #e7e7e8 inset;
   border: 1px solid #ccc;
   border-radius: 3px;
