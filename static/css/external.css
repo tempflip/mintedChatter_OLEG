@@ -228,7 +228,7 @@ textarea:-moz-placeholder {
 }
 .newPostButton {
 	font-family: Arial;
-	font-size: 12px;
+	font-size: 13px;
 	background-color: #8ab529;
 	border: 1px solid #6c8049;
 	background-image: -ms-linear-gradient(top,#8AB529 0,#87AC31 100%);
@@ -236,9 +236,9 @@ textarea:-moz-placeholder {
 	background-image: -webkit-linear-gradient(top,#8AB529 0,#87AC31 100%);
 	background-image: linear-gradient(top,#8AB529 0,#87AC31 100%);
 	display: inline-block;
-	padding-left: 12px;
-	padding-right: 12px;
-	padding-top: 6px;
+	padding-left: 13px;
+	padding-right: 13px;
+	padding-top: 5px;
 	margin-top: 3px;
 	height: 30px;
 	color: #fff;
