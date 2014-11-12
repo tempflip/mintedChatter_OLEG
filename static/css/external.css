@@ -41,6 +41,10 @@
 	line-height: 16px;
 }
 
+.publisherTypeOverflow .publish-trigger:hover{
+	text-decoration: none;
+}
+
 .publish .publish-trigger {
 	bottom: 10px;
 	padding-top: 9px;
@@ -67,7 +71,11 @@
 }
 
 .publisherFeedItemTypeChoices .publisherFeedItemTypeChoice .publisherattachtext{
-	color: #015ba7;
+	color: #015ba7 !important;
+}
+
+.publisherFeedItemTypeChoices .publisherFeedItemTypeChoice .publisherattachtext:hover{
+	text-decoration: underline;
 }
 
 a.publisherattach:link .publisherattachtext{
@@ -92,6 +100,19 @@ span.truncateLabel {
 
 .publish .publish-options.publish-options-show{
 	display: block;
+}
+
+.publish .publish-trigger b.zen-selectArrow {
+	border: 0;
+	float: none;
+	position: relative;
+	background-image: url(../images/chattersupersprite.png);
+	background-position: 0 -1840px;
+	width: 7px;
+	height: 5px;
+	background-repeat: no-repeat;
+	top: 0;
+	margin-left: 1px;
 }
 
 .publisherTypeOverflow .publish-options {
