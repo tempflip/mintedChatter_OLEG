@@ -393,5 +393,12 @@ color: #015ba7;
   width: 15px;
   vertical-align: text-top;
 }
+.sprite-doctype_unknown_32 {
+  background-image: url(../images/doctype_32_sprite.png);
+  background-position: 0 -968px;
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+}
 
 /* FILE PAGE END */
