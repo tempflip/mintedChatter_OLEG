@@ -171,7 +171,7 @@ span.truncateLabel {
 .newPostBody {
 }
 .newPostBodyActive {
-	height: 80px;
+	border: 1px solid #c7ccce;
 }
 .newPostButton {
 	font-size: 11px;
