@@ -334,6 +334,16 @@ height: 48px;
 display: block;
 }
 
+.tabs-content {
+    overflow:hidden;
+}
+.tabs-content ul {
+    list-style: none
+    /* Эти 3 линии для Opera */
+    overflow: scroll;
+    overflow-y: hidden;
+}
+
 
 
 
