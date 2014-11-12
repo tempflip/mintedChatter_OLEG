@@ -107,7 +107,6 @@ span.truncateLabel {
 
 .publishercontainer .publisherFeedItemTypeChoices a.publisherattach, a.cxcontentcommentaction, span.cxcontentcommentactiontext {
 	color: #015ba7;
-	padding: 1px;
 	font-weight: bold;
 	text-decoration: none;
 }
