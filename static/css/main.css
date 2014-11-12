@@ -120,7 +120,6 @@ color: #015ba7;
 }
 .likeIcon {
   background-position: 0 -522px;
-  margin-right: 3px;
 }
 /*ICONS END*/
 
@@ -139,10 +138,13 @@ color: #015ba7;
 .itemHeader {
 	margin-left: 50px;
 	margin-bottom: 5px;
-	font-weight: bold;
 	font-size: 12px;
   position: relative;
   top: -8px;
+}
+.itemHeader .name {
+  color: #015ba7;
+  font-weight: bold;
 }
 .itemBody {
 	margin-bottom: 10px;
@@ -167,6 +169,10 @@ color: #015ba7;
 	padding: 5px;
   margin: 20px 0px 0px 50px;
 	font-size: 11px;
+}
+.itemLikes .likeIcon {
+  position: relative;
+  top: 3px;
 }
 .itemTools {
 	margin-left: 50px;
