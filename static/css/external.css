@@ -176,6 +176,7 @@ span.truncateLabel {
 .newPostButton {
 	font-size: 11px;
 	background-color: #8ab529;
+	border: 1px solid #6c8049;
 }
 .newPostArea {
 	height: 30px;
@@ -208,6 +209,10 @@ span.truncateLabel {
 	display: inline-block;
 	vertical-align: top;
 	line-height: 30px;
+}
+
+.postToTarget{
+	font-weight: bold;
 }
 
 .publishercontainer .bottomBarRight {
