@@ -1,5 +1,7 @@
 
-
+h2.h2Custom{
+	font-size: 22px;
+}
 .publisherFeedItemTypeChoices{
 	margin-bottom: 6px;
 	position: relative;

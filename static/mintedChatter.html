@@ -71,7 +71,7 @@
 		</div> <!-- end of sidebar column-->
 
 		<div class="col-xs-8 col-sm-7 col-md-5">
-			<h2 ng-show="showFeed">{{currentFeedTitle}}</h2>
+			<h2 ng-show="showFeed" class="h2Custom">{{currentFeedTitle}}</h2>
 			<h2 ng-show="showFileFeed">Files Feed</h2>
 
 			<post-box subject="currentFeedId" ng-show="showFeed && feedWritable && !feedLoading"></post-box>
