@@ -205,10 +205,14 @@ span.truncateLabel {
 }
 
 input::-webkit-input-placeholder {
-
+	padding-left: 10px;
+	padding-top: 8px;
+	font-size: 12px;
 }
 input:-moz-placeholder {
-	
+	padding-left: 10px;
+	padding-top: 8px;
+	font-size: 12px;
 }
 
 .newPostBody {
@@ -371,7 +375,7 @@ margin-left: 10px;
 .publishercontainer {
 line-height: normal;
 padding-top: 10px;
-max-width: 531px;
+width: 531px;
 overflow: visible;
 position: relative;
 padding-bottom: 20px;
