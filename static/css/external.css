@@ -194,6 +194,11 @@ span.truncateLabel {
 
 .postBoxContainer textarea{
 	border-color: transparent;
+	background-image: url(../images/innershadow-normal.png);
+	background-position: 0 0;
+	background-repeat: repeat-x;
+	width: auto;
+	height: auto;
 }
 .newPostBody {
 }
@@ -363,14 +368,7 @@ padding-right: 10px;
 }
 
 .publishercontainer .publisherTextAreaInner {
-background-image: url(../images/innershadow-normal.png);
-background-position: 0 0;
-width: 0;
-height: 0;
-width: auto;
-height: auto;
 background-color: #fff;
-background-repeat: repeat-x;
 position: relative;
 border: 1px solid #c7ccce;
 }
