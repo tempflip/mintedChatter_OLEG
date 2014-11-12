@@ -175,6 +175,7 @@ span.truncateLabel {
 }
 .newPostButton {
 	font-size: 11px;
+	background-color: #8ab529;
 }
 .newPostArea {
 	height: 30px;
@@ -196,4 +197,19 @@ span.truncateLabel {
 	border-radius: 3px;
 	border-top-left-radius: 0;
 	border-top-right-radius: 0;
+	overflow: hidden;
+}
+
+.publishercontainer .bottomBarLeft {
+	float: left;
+}
+
+.postTo {
+	display: inline-block;
+	vertical-align: top;
+	line-height: 30px;
+}
+
+.publishercontainer .bottomBarRight {
+	float: right;
 }
