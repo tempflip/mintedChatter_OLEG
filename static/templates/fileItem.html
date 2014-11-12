@@ -1,17 +1,16 @@
 <tr>
   <td>
     <a href="#" ng-click="getFile(item.attachment.downloadUrl);" class="chatterFollowUnfollowAction" title="Follow this file to receive updates in your feed.">
-      {{item.attachment.title}}
     </a>
   </td>
   <td>
     <a href="#" class="sprite-doctype_unknown_32"></a>
     <a href="#" class="fileNameLink">
-      {{item.parent.name}}
+      {{item.attachment.title}}
     </a>
   </td>
   <td>
-    <a href="#" class="filesOwnerLink">author</a>
+    <a href="#" class="filesOwnerLink">{{item.parent.name}}</a>
   </td>
   <td>
     <span>
