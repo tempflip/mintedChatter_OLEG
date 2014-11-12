@@ -45,6 +45,7 @@
 
 .publisherTypeOverflow.publish-select {
 	margin-left: 3px;
+	display: inline-block;
 }
 
 .publish-select .publish-trigger {
