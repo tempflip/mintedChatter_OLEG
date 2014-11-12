@@ -17,9 +17,12 @@
 		<div class="itemDownload" ng-show="{{element.capabilities.content}}">
       <span class="doctype_unknown_48"></span>
 			<a href="#" ng-click="getFile(element.capabilities.content.downloadUrl);">
-        <span class="downloadItemIcon"></span>
         {{element.capabilities.content.title}}
       </a>
+      <div ng-click="getFile(element.capabilities.content.downloadUrl);">
+        <span class="downloadItemIcon"></span>
+        Download
+      </div>
 			<br/>
 			Filetype:
 			{{element.capabilities.content.fileType}}
