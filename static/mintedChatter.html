@@ -95,7 +95,8 @@
             <col width="16%">
           </colgroup>
           <thead>
-            <file-item-header ng-show="showFileFeed"></file-item-header>
+            <tr data-file-item-header ng-show="showFileFeed">
+            </tr>
           </thead>
           <tbody>
           <file-item item="item" ng-repeat="item in fileFeed" ng-show="showFileFeed"></file-item>

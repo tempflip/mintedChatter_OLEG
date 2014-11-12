@@ -146,7 +146,7 @@ app.directive("fileItem", function(chatterService) {
 app.directive("fileItemHeader", function() {
 	console.log('DWAd3e3234243434343');
 	return {
-		restrict : 'E',
+		restrict : 'A',
 		templateUrl : FILE_ITEM_HEADER_TEMPLATE
 	};
 });
