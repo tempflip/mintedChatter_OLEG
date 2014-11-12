@@ -88,20 +88,28 @@
           <button class="btnGrey" ng-click="">Search</button>
         </div>
         <table class="greyTable">
-          <file-item-header ng-show="showFileFeed"></file-item-header>
+          <colgroup>
+            <col width="14%">
+            <col width="53%">
+            <col width="17%">
+            <col width="16%">
+          </colgroup>
+          <thead>
+            <file-item-header ng-show="showFileFeed"></file-item-header>
+          </thead>
           <tbody>
-            <file-item item="item" ng-repeat="item in fileFeed" ng-show="showFileFeed"></file-item>
+          <file-item item="item" ng-repeat="item in fileFeed" ng-show="showFileFeed"></file-item>
           </tbody>
         </table>
       </div>
-		</div> <!--end of feed column -->
-	</div> <!--end of main row-->
+    </div> <!--end of feed column -->
+  </div> <!--end of main row-->
 </div>
 
 <script>
-	$(document).ready(function() {
-		$("#authLink").attr("href", AUTH_LINK);
-	});
+$(document).ready(function() {
+    $("#authLink").attr("href", AUTH_LINK);
+    });
 </script>
 
 </body>
