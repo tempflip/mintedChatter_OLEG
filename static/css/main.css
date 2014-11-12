@@ -259,8 +259,20 @@ color: #015ba7;
 }
 /* FEED ITEM PAGE END */
 
+.inputSearch {
+  background: url("../images/func_icons/util/search16.png") no-repeat scroll 3px #fff;
+  box-shadow: 0 1px 1px #e7e7e8 inset;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  color: #777;
+  margin: 0;
+  outline: medium none;
+  padding: 8px 35px 7px 25px;
+  width: 190px;
+}
+
 /* FILE PAGE */
-.grayBlock {
+.greyBlock {
   background: none repeat scroll 0 0 #fbfbfb;
   border: 1px solid #e0e0e0;
   border-bottom: none;
