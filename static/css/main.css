@@ -120,6 +120,10 @@ color: #015ba7;
   filter: gray;
 }
 
+.toAllCustomertimes{
+  background-position: 0 -1222px;
+}
+
 .feedTypeList {
   background-position: 0 -322px;
 }

@@ -52,6 +52,8 @@
 	width: auto;
 	z-index: 3;
 	color: #015ba7;
+	font-weight: bold;
+	font-size: 12px;
 }
 
 .publish-options {
@@ -72,6 +74,8 @@
 
 .publisherFeedItemTypeChoices .publisherFeedItemTypeChoice .publisherattachtext{
 	color: #015ba7 !important;
+	font-weight: bold;
+	font-size: 12px;
 }
 
 .publisherFeedItemTypeChoices .publisherFeedItemTypeChoice .publisherattachtext:hover{
