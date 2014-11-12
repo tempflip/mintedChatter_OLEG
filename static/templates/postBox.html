@@ -119,10 +119,52 @@
 	    </li>
 	</ul>
 
-	<div class="postBoxContainer">
+	<div class="postBoxContainer" style="display: none;">
 		<div class="newPostBody" ng-class="{newPostBodyActive : activeTextArea}">
 			<div class="publisherTextAreaInner">
 				<textarea class="newPostArea " ng-class="{newPostAreaActive : activeTextArea}" ng-model="postText" ng-click="activeTextArea = true;"></textarea>
+			</div>
+		</div>
+		<div class="publisherBottomBarPlaceholder">
+			<div class="bottomBar">
+				<div class="bottomBarLeft">
+					<span class="postTo">
+						<span class="postToText">To</span>
+						<span class="postToTarget">All Customers</span>
+					</span>
+				</div>
+				<div class="bottomBarRight">
+					<button class="btn btn-custom newPostButton " ng-click="postItem(postText); postText = '';">Share</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="ContentPost publisherTemplate activeTemplate">
+		<div class="contentPublisherSlideDown customPanel alignTop">
+			<div class="panel">
+				<div class="panelBody clear">
+					<table class="chatterPublisherActionsContainer" cellpadding="0" cellspacing="0">
+						<tbody>
+							<tr>
+								<td class="chatterPublisherFileActionContainerLeft">
+									<a href="#" id="chatterLinkFileAction" title="Select a file from Salesforce">Select a file from Salesforce</a>
+								</td>
+								<td id="chatterUploadFileActionPanel">
+									<a href="#" id="chatterUploadFileAction" title="Upload a file from your computer">Upload a file from your computer</a>
+									<input class="file hidden" id="hiddenFileBtn" name="hiddenFileBtn" size="20" type="file">
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="publisherTextAreaPlaceholder alignCenter">
+			<div class="publisherTextAreaContainer">
+				<div class="publisherTextAreaInner">
+					<textarea class="chatterTopicsEnabled  groupAtMentionsEnabled publishertextarea" id="publishereditablearea" name="publishereditablearea" role="textbox" tabindex="0" title="Say something about this file..." type="text" wrap="soft" data-uidsfdc="45" style="height: 48px;">Share with All Customertimes</textarea>
+				</div>
 			</div>
 		</div>
 		<div class="publisherBottomBarPlaceholder">
