@@ -27,6 +27,7 @@
 	position: relative;
 	height: 20px;
 	white-space: nowrap;
+	padding-left: 0px;
 }
 
 .publishercontainer li.publisherFeedItemTypeChoice {
@@ -62,10 +63,22 @@
 	position: relative;
 	min-width: 10px;
 	max-width: 300px;
-	border-radius: 2px 2px 0 0;
 	border-color: #dadada;
 	border-width: 1px;
 	z-index: 1000;
+	line-height: 16px;
+}
+
+.publish .clicked .publish-trigger {
+	bottom: 10px;
+	padding-top: 9px;
+	padding-left: 14px;
+	width: auto;
+	border: solid;
+	border-width: 1px;
+	border-color: #dadada;
+	border-bottom: none;
+	z-index: 3;
 }
 
 .publish-options {
