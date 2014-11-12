@@ -86,6 +86,7 @@ color: #015ba7;
 }
 .leftNav .menuItem .trigger {
   color: #333435;
+  font-size: 12px;
   padding-left: 27px;
 }
 .leftNav .menuItem.selected .trigger {
@@ -190,6 +191,9 @@ color: #015ba7;
 /*ICONS END*/
 
 /* FEED ITEM PAGE */
+.itemContent {
+  margin-left: 58px;
+}
 .itemIcon {
 	float: left;
 }
@@ -202,11 +206,10 @@ color: #015ba7;
 	height: 45px;
 }
 .itemHeader {
-	margin-left: 50px;
 	margin-bottom: 5px;
 	font-size: 12px;
   position: relative;
-  top: -8px;
+  top: -3px;
 }
 .itemHeader .name {
   color: #015ba7;
@@ -214,14 +217,12 @@ color: #015ba7;
 }
 .itemBody {
 	margin-bottom: 10px;
-	margin-left: 50px;
 }
 .itemDownload {
 	border: 1px solid #ededed;
   border-radius: 1px;
 	padding: 10px;
 	margin-bottom: 10px;
-	margin-left: 50px;
   overflow: hidden;
 }
 .itemDownload .doctype_unknown_48 {
@@ -241,14 +242,13 @@ color: #015ba7;
 	border: #BDBDBD solid 1px;
 	padding: 10px;
 	margin-bottom: 10px;
-	margin-left: 50px;
 }
 .itemLikes {
 	border-top: 1px solid ;
 	color: #BDBDBD;
 	background: #FAFAFA;
 	padding: 5px;
-  margin: 20px 0px 0px 50px;
+  margin: 20px 0px 0px 0px;
 	font-size: 11px;
 }
 .itemLikes .likeIcon {
@@ -256,7 +256,6 @@ color: #015ba7;
   top: 3px;
 }
 .itemTools {
-	margin-left: 50px;
 	margin-bottom: 5px;
 	font-size: 11px;
   position: relative;
@@ -271,7 +270,6 @@ color: #015ba7;
 	background: #fbfbfb;
 	padding: 10px;
   padding-right: 20px;
-	margin-left: 50px;
   margin-top: 20px;
 }
 .commentIcon {
