@@ -87,7 +87,6 @@
           <input type="text" class="inputSearch" placeholder="Search All Files..." autocomplete="off">
           <button class="btnGrey" ng-click="">Search</button>
         </div>
-        1
         <table class="greyTable">
           <colgroup>
             <col width="14%">
@@ -96,11 +95,9 @@
             <col width="16%">
           </colgroup>
           <thead>
-            <th></th>
             <file-item-header ng-show="showFileFeed"></file-item-header>
           </thead>
           <tbody>
-          <td></td>
           <file-item item="item" ng-repeat="item in fileFeed" ng-show="showFileFeed"></file-item>
           </tbody>
         </table>
