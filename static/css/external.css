@@ -107,7 +107,8 @@
 	padding-right: 15px;
 }
 
-.addPost, .addFile, .addEvent{
-	padding-left: 24px;
-	margin-left: -20px;
+.publishercontainer a.publisherattach span, a.cxcontentcommentaction span {
+	margin-left: 5px;
+	line-height: 16px;
+	vertical-align: top;
 }
