@@ -1,26 +1,4 @@
-.postBoxContainer {
-	width: 100%;
-	margin-bottom: 30px;
-}
-.newPostBody {
-}
-.newPostBodyActive {
-	height: 80px;
-}
-.newPostButton {
-	font-size: 11px;
-}
-.newPostArea {
-	float:left;
-	height: 30px;
-	width: 100%;
-	font-size: 11px;
-	margin-right: 27px;
-	margin-bottom: 5px;
-}
-.newPostAreaActive {
-	height: 70px;
-}
+
 
 .publisherFeedItemTypeChoices{
 	margin-bottom: 6px;
@@ -161,13 +139,51 @@ span.truncateLabel {
 
 .publishercontainer .publisherattach span.pArrow {
 	position: absolute;
-	bottom: -11px;
+	bottom: -8px;
 	left: 50%;
 	margin-left: -8px;
-	display: none;
+	display: block;
 	background-image: url(../images/chattersupersprite.png);
 	background-position: 0 -261px;
 	width: 13px;
 	height: 9px;
 	z-index: 2;
+}
+
+.publishercontainer .whenPostClicked .publisherTextAreaInner {
+	background-image: url(/img/chatter/innershadow-normal.png);
+	background-position: 0 0;
+	width: 0;
+	height: 0;
+	width: auto;
+	height: auto;
+	background-color: #fff;
+	background-repeat: repeat-x;
+	position: relative;
+	border: 1px solid #c7ccce;
+	padding: 7px 7px 6px 7px;
+}
+
+.postBoxContainer {
+	width: 100%;
+	margin-bottom: 30px;
+}
+.newPostBody {
+}
+.newPostBodyActive {
+	height: 80px;
+}
+.newPostButton {
+	font-size: 11px;
+}
+.newPostArea {
+	float:left;
+	height: 30px;
+	width: 100%;
+	font-size: 11px;
+	margin-right: 27px;
+	margin-bottom: 5px;
+}
+.newPostAreaActive {
+	height: 70px;
 }

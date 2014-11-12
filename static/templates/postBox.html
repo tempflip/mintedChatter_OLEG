@@ -33,7 +33,6 @@
 				        <b class="publish-selectArrow"></b>
 				    </span>
 			    </a>
-			    <span class="pArrow"></span>
 			    <ul class="publish-options">
 					<li>
 						<a href="#" class="publisherattach truncateLabelWrapper taskMru publisherFeedItemTypeChoice" title="New Task">
@@ -122,10 +121,22 @@
 
 	<div class="postBoxContainer">
 		<div class="newPostBody" ng-class="{newPostBodyActive : activeTextArea}">
-			<textarea class="newPostArea " ng-class="{newPostAreaActive : activeTextArea}" ng-model="postText" ng-click="activeTextArea = true;"></textarea>
-			<button class="btn btn-custom newPostButton " ng-click="postItem(postText); postText = '';">Share</button>
+			<div class="publisherTextAreaInner">
+				<textarea class="newPostArea " ng-class="{newPostAreaActive : activeTextArea}" ng-model="postText" ng-click="activeTextArea = true;"></textarea>
+			</div>
+		</div>
+		<div class="publisherBottomBarPlaceholder">
+			<div class="bottomBar">
+				<div class="bottomBarLeft">
+					<span class="postToText">To</span>
+					<span class="postToTarget">All Customers</span>
+				</div>
+				<div class="bottomBarRight">
+					<button class="btn btn-custom newPostButton " ng-click="postItem(postText); postText = '';">Share</button>
+				</div>
+			</div>
+		</div>
 	</div>
-</div>
 <script type="text/javascript">
 	$(document).ready(function() {
     	$(".seeMore").click(function(){
