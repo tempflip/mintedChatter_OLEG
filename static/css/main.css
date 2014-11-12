@@ -355,7 +355,10 @@ color: #015ba7;
 .greyTable td {
   border-top: 1px solid #e0e0e0;
 }
-
+.greyTable td {
+  font-size: 13px;
+  padding: 12px 10px;
+}
 /* FILE PAGE */
 .greyBlock {
   background: none repeat scroll 0 0 #fbfbfb;
@@ -385,6 +388,7 @@ color: #015ba7;
 }
 .chatterFollowUnfollowAction {
   background: transparent url(../images/follow_sprite.png) no-repeat 0 0;
+  display: block;
   height: 15px;
   width: 15px;
   vertical-align: text-top;
