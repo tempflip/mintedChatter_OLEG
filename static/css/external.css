@@ -41,9 +41,13 @@
 	line-height: 16px;
 }
 
+.publisherTypeOverflow .publish-trigger:hover{
+	text-decoration: none;
+}
+
 .publish .publish-trigger {
 	bottom: 10px;
-	padding-top: 9px;
+	padding-top: 10px;
 	padding-left: 14px;
 	width: auto;
 	z-index: 3;
@@ -67,7 +71,11 @@
 }
 
 .publisherFeedItemTypeChoices .publisherFeedItemTypeChoice .publisherattachtext{
-	color: #015ba7;
+	color: #015ba7 !important;
+}
+
+.publisherFeedItemTypeChoices .publisherFeedItemTypeChoice .publisherattachtext:hover{
+	text-decoration: underline;
 }
 
 a.publisherattach:link .publisherattachtext{
@@ -92,6 +100,20 @@ span.truncateLabel {
 
 .publish .publish-options.publish-options-show{
 	display: block;
+}
+
+.publish .publish-trigger b.publish-selectArrow {
+	border: 0;
+	float: none;
+	position: relative;
+	background-image: url(../images/chattersupersprite.png);
+	background-position: 0 -1840px;
+	width: 7px;
+	height: 5px;
+	background-repeat: no-repeat;
+	top: -3px;
+	margin-left: 1px;
+	display: inline-block;
 }
 
 .publisherTypeOverflow .publish-options {
@@ -179,9 +201,43 @@ span.truncateLabel {
 	
 }
 .newPostButton {
-	font-size: 11px;
+	font-family: Arial;
+	font-size: 1.08em;
 	background-color: #8ab529;
 	border: 1px solid #6c8049;
+	background-image: -ms-linear-gradient(top,#8AB529 0,#87AC31 100%);
+	background-image: -moz-linear-gradient(top,#8AB529 0,#87AC31 100%);
+	background-image: -webkit-linear-gradient(top,#8AB529 0,#87AC31 100%);
+	background-image: linear-gradient(top,#8AB529 0,#87AC31 100%);
+	display: inline-block;
+	padding-top: 0;
+	padding-bottom: 1px;
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 30px;
+	color: #fff;
+	-moz-border-radius: 3px;
+	border-radius: 2px;
+	-moz-box-shadow: 0 1px 2px 0 #adadad;
+	-webkit-box-shadow: 0 1px 2px 0 #adadad;
+	box-shadow: 0 1px 2px 0 #adadad;
+	margin: 0;
+	border-color: #c3c3c3 #aaa #909090;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 3px 6px;
+	overflow: visible;
+	cursor: pointer;
+	position: relative;
+}
+
+.newPostButton:hover{
+	background-color: #a0cb3d;
+	background-image: -ms-linear-gradient(top,#a5cd48 0,#97bf3a 100%);
+	background-image: -moz-linear-gradient(top,#a5cd48 0,#97bf3a 100%);
+	background-image: -webkit-linear-gradient(top,#a5cd48 0,#97bf3a 100%);
+	background-image: linear-gradient(top,#a5cd48 0,#97bf3a 100%);
+	color: #fff;
 }
 .newPostArea {
 	height: 30px;
@@ -307,14 +363,12 @@ padding-right: 10px;
 }
 
 .publishercontainer .publisherTextAreaInner {
-background-image: url(../images/innershadow-normal.png);
-background-position: 0 0;
-width: 0;
-height: 0;
+-webkit-box-shadow: inset 0px 1px 2px 1px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    inset 0px 1px 2px 1px rgba(50, 50, 50, 0.75);
+box-shadow:         inset 0px 1px 2px 1px rgba(50, 50, 50, 0.75);
 width: auto;
 height: auto;
 background-color: #fff;
-background-repeat: repeat-x;
 position: relative;
 border: 1px solid #c7ccce;
 }
