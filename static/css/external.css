@@ -125,7 +125,14 @@
 	list-style: none;
 }
 
-.publisherTypeOverflow.publish-open .publish-options .publisherFeedItemTypeChoice {
+.publish-options li .publisherattach:hover{
+	color: #015ba7;
+	background-color: #e3f3ff;
+	text-decoration: none;
+	outline: none;
+}
+
+.clicked .publish-options .publisherFeedItemTypeChoice {
 	width: 100%;
 	padding-left: 10px;
 	padding-top: 7px;
