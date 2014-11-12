@@ -226,7 +226,16 @@ color: #015ba7;
 }
 .itemDownload .doctype_unknown_48 {
   float: left;
-  margin-right: 0px;
+  margin-right: 15px;
+}
+.itemDownload .itemName {
+  font-size: 12px;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 3px;
+}
+.itemDownload .itemDownloadLink {
+  font-size: 11px;
 }
 .itemLink {
 	border: #BDBDBD solid 1px;
