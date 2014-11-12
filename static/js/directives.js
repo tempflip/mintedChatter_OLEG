@@ -136,7 +136,7 @@ app.directive("fileItem", function(chatterService) {
 	}
 
 	return {
-		restrict : 'E',
+		restrict : 'A',
 		scope : {item : "=item"},
 		link : link,
 		templateUrl : FILE_ITEM_TEMPLATE
