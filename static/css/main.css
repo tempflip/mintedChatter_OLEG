@@ -258,3 +258,30 @@ color: #015ba7;
   margin-right: 15px;
 }
 /* FEED ITEM PAGE END */
+
+/* FILE PAGE */
+.grayBlock {
+  background: none repeat scroll 0 0 #fbfbfb;
+  border: 1px solid #e0e0e0;
+  border-bottom: none;
+  height: 32px;
+  padding: 8px 5px 8px 6px;
+}
+.fileNameHeader {
+	float:left;
+	width: 50%;
+	font-weight: bold;
+}
+.fileOwnerHeader {
+	float:left;
+	width: 30%;
+	font-weight: bold;
+}
+.fileDateHeader {
+	float:left;
+	width: 20%;
+	font-weight: bold;
+	text-align: right;
+}
+
+/* FILE PAGE END */
