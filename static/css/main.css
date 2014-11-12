@@ -214,7 +214,7 @@ color: #015ba7;
 .newCommentBody {
 	font-size: 11px;
   overflow: hidden;
-  margin-left: 55px;
+  margin-left: 40px;
 }
 .newCommentBody textarea {
   resize: none;
