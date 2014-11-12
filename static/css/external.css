@@ -162,7 +162,7 @@ span.truncateLabel {
 
 .publishercontainer .publisherattach span.pArrow {
 	position: absolute;
-	bottom: -11px;
+	bottom: -12px;
 	left: 50%;
 	margin-left: -8px;
 	display: block;
@@ -197,8 +197,8 @@ span.truncateLabel {
 	background-image: url(../images/innershadow-normal.png);
 	background-position: 0 0;
 	background-repeat: repeat-x;
-	width: auto;
-	height: auto;
+	width: 100%;
+	border: 1px solid #c7ccce;
 }
 .newPostBody {
 }
@@ -370,7 +370,7 @@ padding-right: 10px;
 .publishercontainer .publisherTextAreaInner {
 background-color: #fff;
 position: relative;
-border: 1px solid #c7ccce;
+border: none;
 }
 
 .publishercontainer .publishertextarea {
