@@ -111,8 +111,9 @@ span.truncateLabel {
 	width: 7px;
 	height: 5px;
 	background-repeat: no-repeat;
-	top: 0;
+	top: -3px;
 	margin-left: 1px;
+	display: inline-block;
 }
 
 .publisherTypeOverflow .publish-options {
@@ -230,12 +231,13 @@ span.truncateLabel {
 	position: relative;
 }
 
-.newPostButton{
+.newPostButton:hover{
 	background-color: #a0cb3d;
 	background-image: -ms-linear-gradient(top,#a5cd48 0,#97bf3a 100%);
 	background-image: -moz-linear-gradient(top,#a5cd48 0,#97bf3a 100%);
 	background-image: -webkit-linear-gradient(top,#a5cd48 0,#97bf3a 100%);
 	background-image: linear-gradient(top,#a5cd48 0,#97bf3a 100%);
+	color: #fff;
 }
 .newPostArea {
 	height: 30px;
