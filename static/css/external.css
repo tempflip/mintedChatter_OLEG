@@ -41,16 +41,13 @@
 	line-height: 16px;
 }
 
-.publish .publish-trigger.clicked {
+.publish .publish-trigger {
 	bottom: 10px;
 	padding-top: 9px;
 	padding-left: 14px;
 	width: auto;
-	border: solid;
-	border-width: 1px;
-	border-color: #dadada;
-	border-bottom: none;
 	z-index: 3;
+	color: #015ba7;
 }
 
 .publish-options {
@@ -100,9 +97,9 @@ span.truncateLabel {
 .publisherTypeOverflow .publish-options {
 	padding-left: 0px;
 	position: relative;
-	top: -13px;
+	top: 36px;
 	left: -5px;
-	padding-top: 10px;
+	padding-top: 36px;
 	padding-bottom: 10px;
 	min-width: 10px;
 	max-width: 300px;
@@ -110,7 +107,6 @@ span.truncateLabel {
 	overflow: visible;
 	border-radius: 0 0 2px 2px;
 	border-color: #dadada;
-	border-top: none;
 	z-index: 2;
 	box-shadow: none;
 	-moz-box-shadow: none;
