@@ -396,9 +396,24 @@ color: #015ba7;
 .sprite-doctype_unknown_32 {
   background-image: url(../images/doctype_32_sprite.png);
   background-position: 0 -968px;
+  display: inline-block;
   width: 32px;
   height: 32px;
   vertical-align: middle;
 }
-
+.doctype_unknown_48 {
+  background-image: url(../images/doctype_unknown_48.png);
+  display: inline-block;
+  height: 48px;
+  width: 48px;
+  vertical-align: middle;
+}
+.downloadItemIcon {
+  background-image: url(../images/chatterfiles16_sprite.png);
+  background-position: 0 -20px;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  vertical-align: middle;
+}
 /* FILE PAGE END */
