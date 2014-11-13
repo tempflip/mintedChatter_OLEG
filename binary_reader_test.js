@@ -41,6 +41,7 @@ RESOURCE: "/services/data/v32.0/chatter/files/069w00000022QfGAAU/content?version
 
 
   var req = https.request(httpOptions, function(res) {
+    console.log('BINARY CALL FIRED');
     var body = '';
     res.setEncoding('binary')
 
@@ -51,12 +52,14 @@ RESOURCE: "/services/data/v32.0/chatter/files/069w00000022QfGAAU/content?version
     res.on('end', function() {
         fs.writeFile('logo', body, 'binary', function(err){
             if (err) throw err
+            console.log('File saved.')
         })
     });
   });
   req.end(JSON.stringify(params));
 
   req.on('error', function(e) {
+    console.error(e);
   });
 
 

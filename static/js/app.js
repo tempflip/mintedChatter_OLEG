@@ -31,6 +31,7 @@ app.controller("chatterController", function(displayService, chatterService, $sc
 		$scope.showFeed = false;
 		$scope.showFileFeed = true;
 		$scope.fileFeed = d.files;
+		console.log('file feed is here', $scope.fileFeed);
 	});
 
 	$scope.$on(USER_DATA_UPDATE_EVENT, function(e, d) {
@@ -80,8 +81,10 @@ app.controller("chatterController", function(displayService, chatterService, $sc
 	var checkToken = function() {
 		if (chatterService.getToken() == undefined) {
 			getCredentials();
+			console.log('no token')
 			setTimeout(checkToken, 1000);
 		} else {
+			console.log('starting');
 			init();
 		}
 	}
@@ -121,6 +124,7 @@ app.factory("displayService", function($rootScope, chatterService) {
 		chatterService
 			.getResource(resource)
 			.then(function(r) {
+				console.log('feed data got', r);
 				$rootScope.$broadcast(FEED_UPDATE_EVENT, {
 					data: r.data.elements, 
 					feedId : feedId,
@@ -135,6 +139,7 @@ app.factory("displayService", function($rootScope, chatterService) {
 		chatterService
 			.getResource(resource)
 			.then(function(r) {
+				console.log('file feed data got', r);
 				$rootScope.$broadcast(FILE_FEED_UPDATE_EVENT, {
 					files: r.data.items
 				});
@@ -142,6 +147,7 @@ app.factory("displayService", function($rootScope, chatterService) {
 	}
 
 	factory.refreshFeed = function() {
+		console.log('currentResource', currentResource, 'currentFeedId', currentFeedId, 'currentFeedTitle', currentFeedTitle);
 		factory.getFeed(currentResource, currentFeedTitle, currentFeedId);
 	}
 
@@ -158,6 +164,7 @@ app.factory("displayService", function($rootScope, chatterService) {
 		chatterService
 			.getResource(resource)
 			.then(function(r) {
+				console.log('user data got', r);
 				$rootScope.$broadcast(USER_DATA_UPDATE_EVENT, {
 					myUser: r.data
 				});
@@ -168,6 +175,7 @@ app.factory("displayService", function($rootScope, chatterService) {
 		chatterService
 			.getResource('/services/data/v32.0/connect/topics/')
 			.then(function(r) {
+				console.log('topics data got', r);
 				$rootScope.$broadcast(TOPIC_DATA_UPDATE_EVENT, {
 					topics : r.data.topics
 				});
@@ -178,6 +186,7 @@ app.factory("displayService", function($rootScope, chatterService) {
 		chatterService
 			.getResource('/services/data/v32.0/chatter/groups/')
 			.then(function(r) {
+				console.log('group data got', r);
 				$rootScope.$broadcast(GROUP_UPDATE_EVENT, {
 					groups : r.data.groups
 				});
@@ -202,6 +211,7 @@ app.factory("chatterService", function($http, $location, $cookies, $cookieStore,
 	var factory = {};
 	factory.getResource = function(resource) {
 		var deferred = $q.defer();
+		console.log('+++ getting', resource)
 		$http.post(SERVICE_URL + '/chatterService',
 				{
 					'SF_INSTANCE' : INSTANCE_URL,
@@ -217,6 +227,7 @@ app.factory("chatterService", function($http, $location, $cookies, $cookieStore,
 	 				}
 	 			}
 	 			var contentType = headers('content-type');
+	 			//console.log('+++ received', resource, data)
 	 			//deferred.resolve(JSON.stringify(data));
 	 			var r = {data : data,
 	 					'content-type' : headers('content-type')
@@ -224,6 +235,8 @@ app.factory("chatterService", function($http, $location, $cookies, $cookieStore,
 	 			deferred.resolve(r);
 			})
 	  		.error(function(data, status, headers, config) {
+	  			console.log(data);
+	  			console.log('error');
 	  			deferred.reject();
 	  		});
 	  	return deferred.promise;
@@ -231,6 +244,7 @@ app.factory("chatterService", function($http, $location, $cookies, $cookieStore,
 
 	factory.postItem = function(resource, data) {
 		var deferred = $q.defer();
+		console.log('+++ posting to', resource, data);
 		$http.post(SERVICE_URL + '/chatterService',
 				{
 					'SF_INSTANCE' : INSTANCE_URL,
@@ -244,6 +258,8 @@ app.factory("chatterService", function($http, $location, $cookies, $cookieStore,
 	 			deferred.resolve(data);
 			})
 	  		.error(function(data, status, headers, config) {
+	  			console.log(data);
+	  			console.log('error');
 	  			deferred.reject();
 	  		});
 	  	return deferred.promise;
@@ -251,6 +267,7 @@ app.factory("chatterService", function($http, $location, $cookies, $cookieStore,
 
 	factory.patchItem = function(resource, data) {
 		var deferred = $q.defer();
+		console.log('+++ patching to', resource, data);
 		$http.post(SERVICE_URL + '/chatterService',
 				{
 					'SF_INSTANCE' : INSTANCE_URL,
@@ -264,6 +281,8 @@ app.factory("chatterService", function($http, $location, $cookies, $cookieStore,
 	 			deferred.resolve(data);
 			})
 	  		.error(function(data, status, headers, config) {
+	  			console.log(data);
+	  			console.log('error');
 	  			deferred.reject();
 	  		});
 	  	return deferred.promise;
@@ -271,6 +290,13 @@ app.factory("chatterService", function($http, $location, $cookies, $cookieStore,
 
 	factory.downloadFile = function(resource) {
 		var deferred = $q.defer();
+		console.log('+++ downloading', resource,
+			{
+					'SF_INSTANCE' : INSTANCE_URL,
+					'SF_TOKEN' : factory.getToken(),
+					'RESOURCE' : resource,
+					'ACTION' : 'DOWNLOAD'
+				});
 		$http.post(SERVICE_URL + '/chatterService',
 				{
 					'SF_INSTANCE' : INSTANCE_URL,
@@ -282,9 +308,12 @@ app.factory("chatterService", function($http, $location, $cookies, $cookieStore,
 			)
 	 		.success(function(data, status, headers, config) {
 				var file = new Blob([data], {type: headers('content-type')});
+				console.log(file);
 	 			deferred.resolve(file);
 			})
 	  		.error(function(data, status, headers, config) {
+	  			console.log(data);
+	  			console.log('error');
 	  			deferred.reject();
 	  		});
 	  	return deferred.promise;
