@@ -62,7 +62,7 @@ app.directive("feedItem", function(chatterService, displayService) {
 	}
 
 	return {
-		restrict : 'E',
+		restrict : 'A',
 		scope: {
 			element : '=element',
 		},
@@ -79,7 +79,7 @@ app.directive("groupItem", function(displayService) {
 		}
 	}
 	return {
-		restrict : 'E',
+		restrict : 'A',
 		scope: {
 			group : '=group',
 		},
@@ -114,7 +114,7 @@ app.directive("postBox", function(chatterService, displayService, $rootScope) {
 	}
 
 	return {
-		restrict : 'E',
+		restrict : 'A',
 		scope : {
 			subject : '=subject' 
 		},

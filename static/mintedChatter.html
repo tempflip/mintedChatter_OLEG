@@ -52,7 +52,7 @@
             My Groups
           </span>
         </li>
-				<group-item group="group" ng-repeat="group in groups"/>
+        <div data-group-item group="group" ng-repeat="group in groups"></div>
         <li class="menuItem">
           <a class="trigger" href="#">
             <span class="icon topicListView"></span>
@@ -72,13 +72,13 @@
 			<h2 ng-show="showFeed" class="h2Custom">{{currentFeedTitle}}</h2>
 			<h2 ng-show="showFileFeed" class="h2Custom">Files Feed</h2>
 
-			<post-box subject="currentFeedId" ng-show="showFeed && feedWritable && !feedLoading"></post-box>
+			<div data-post-box subject="currentFeedId" ng-show="showFeed && feedWritable && !feedLoading"></div>
 
 			<div ng-show="feedLoading">
 				<!--<img src="https://33.media.tumblr.com/6abb472734002fa7143f8003e771ac19/tumblr_mqm9amwnsP1sv98gio1_400.gif" width="150" height="150" />-->
 			</div>
 
-			<feed-item element="element" ng-repeat="element in feed" ng-show="showFeed"></feed-item>
+			<div data-feed-item element="element" ng-repeat="element in feed" ng-show="showFeed"></div>
 
       <div ng-show="showFileFeed">
         <div class="greyBlock">
