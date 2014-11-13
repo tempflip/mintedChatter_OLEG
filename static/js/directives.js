@@ -45,7 +45,6 @@ app.directive("feedItem", function(chatterService, displayService) {
 			};
 			chatterService.patchItem('/services/data/v32.0/chatter/feed-elements/' + id + '/capabilities/bookmarks', data)
 				.then(function(r) {
-					console.log('item bookmarked', r);
 					displayService
 						.refreshFeed();
 				});				
@@ -105,7 +104,6 @@ app.directive("postBox", function(chatterService, displayService, $rootScope) {
 			};
 			chatterService.postItem('/services/data/v32.0/chatter/feed-elements', data)
 				.then(function(r) {
-					console.log('POST RESPONSE', r)
 					displayService
 						.refreshFeed();
 				});
@@ -144,7 +142,6 @@ app.directive("fileItem", function(chatterService) {
 });
 
 app.directive("fileItemHeader", function() {
-	console.log('DWAd3e3234243434343');
 	return {
 		restrict : 'A',
 		templateUrl : FILE_ITEM_HEADER_TEMPLATE

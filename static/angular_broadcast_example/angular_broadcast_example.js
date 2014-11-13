@@ -17,7 +17,6 @@ app.factory("messenger", function($rootScope) {
 	var factory = {}
 
 	factory.message = function(m) {
-		console.log('messenger msg');
 		$rootScope.$broadcast(MESSAGE_EVENT, m);
 	}
 
@@ -27,7 +26,6 @@ app.factory("messenger", function($rootScope) {
 app.directive("firstDirective", function(messenger) {
 	function link(scope, element, attrs) {
 		scope.send = function(m) {
-			console.log('directive msg');
 			messenger.message(m);
 		}
 	}
