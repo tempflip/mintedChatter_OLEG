@@ -61,7 +61,7 @@ app.directive("feedItem", function(chatterService, displayService) {
 	}
 
 	return {
-		restrict : 'E',
+		restrict : 'A',
 		scope: {
 			element : '=element',
 		},
